@@ -100,6 +100,14 @@
           </li>
           <li>
             <router-link
+              to="/services"
+              @click="closeMenu"
+              class="hover:text-accent transition-colors duration-300"
+              >Services</router-link
+            >
+          </li>
+          <li>
+            <router-link
               to="/about"
               @click="closeMenu"
               class="hover:text-accent transition-colors duration-300"
