@@ -1,7 +1,7 @@
 <template>
   <header class="bg-primary text-white p-3 md:py-6">
     <div
-      class="container mx-auto flex flex-wrap justify-between items-center animate-fade-in"
+      class="container max-w-7xl mx-auto flex flex-wrap justify-between items-center animate-fade-in"
     >
       <!-- Logo and Title with Fade-in Animation -->
       <router-link to="/">

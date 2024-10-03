@@ -1,6 +1,6 @@
 <template>
   <section class="px-3 py-10 md:py-16 bg-gray-100">
-    <div class="container mx-auto px-4">
+    <div class="container max-w-7xl mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-heading text-center mb-8">Our Services</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Educational Programs -->
