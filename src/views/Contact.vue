@@ -11,17 +11,17 @@
       <div class="space-y-6">
         <div>
           <h2 class="text-2xl font-semibold">Office Address</h2>
-          <p>123 Wellness Avenue, Health City, ZIP 45678</p>
+          <p>41, Baale Street Orile Iganmu, Surulere, Lagos.</p>
         </div>
         <div>
           <h2 class="text-2xl font-semibold">Phone</h2>
-          <p>+234 12345678</p>
+          <p>+23480 7435 5873</p>
         </div>
         <div>
           <h2 class="text-2xl font-semibold">Email</h2>
-          <p>info@wgfhfoundation.org</p>
+          <p>wogafhfoundation024@gmail.com</p>
         </div>
-        <div>
+        <div class="hidden">
           <h2 class="text-2xl font-semibold">Social Media</h2>
           <ul class="list-none">
             <li><a href="#" class="text-blue-600 hover:underline">Facebook</a></li>
