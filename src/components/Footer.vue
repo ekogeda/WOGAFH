@@ -7,7 +7,7 @@
         <router-link to="/mission" class="mr-4">Mission</router-link>
         <router-link to="/contact">Contact</router-link>
       </div>
-      <p>&copy; 2024 Reproductive Health Foundation. All rights reserved.</p>
+      <p>&copy; 2024 WOGAFH Foundation . All rights reserved.</p>
     </div>
   </footer>
 </template>

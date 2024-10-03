@@ -7,7 +7,7 @@ const routes = [
 		name: 'Home',
 		component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue'),
 		meta: {
-			title: 'Home - Female Reproductive Health',
+			title: 'Home - Women Genital and Fertility Health',
 			description: 'Welcome to our homepage where we focus on female reproductive and mental health.',
 			canonical: '/',
 		},
@@ -17,8 +17,8 @@ const routes = [
 		name: 'About',
 		component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
 		meta: {
-			title: 'About Us - Female Reproductive Health',
-			description: 'Learn more about our mission and objectives for promoting female reproductive health.',
+			title: 'About Us - Women Genital and Fertility Health',
+			description: 'Learn more about our mission and objectives for promoting Women Genital and Fertility Health.',
 			canonical: '/about',
 		},
 	},
@@ -28,7 +28,7 @@ const routes = [
 		component: () => import(/* webpackChunkName: "mission" */ '../views/Mission.vue'),
 		meta: {
 			title: 'Our Mission - Reproductive Health',
-			description: 'Learn about our mission to educate and advocate for female reproductive health and rights.',
+			description: 'Learn about our mission to educate and advocate for Women Genital and Fertility Health and rights.',
 			canonical: '/mission',
 		},
 	},
@@ -37,7 +37,7 @@ const routes = [
 		name: 'Services',
 		component: () => import(/* webpackChunkName: "services" */ '../views/Services.vue'),
 		meta: {
-			title: 'Our Services - Female Reproductive Health',
+			title: 'Our Services - Women Genital and Fertility Health',
 			description: "Explore our services aimed at promoting women's reproductive health and mental well-being.",
 			canonical: '/services',
 		},
@@ -47,7 +47,7 @@ const routes = [
 		name: 'Contact',
 		component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue'),
 		meta: {
-			title: 'Contact Us - Female Reproductive Health',
+			title: 'Contact Us - Women Genital and Fertility Health',
 			description: 'Get in touch with us for more information on female reproductive and mental health.',
 			canonical: '/contact',
 		},
@@ -57,7 +57,7 @@ const routes = [
 		name: 'Blog',
 		component: () => import(/* webpackChunkName: "blog" */ '../views/Blog.vue'),
 		meta: {
-			title: 'Blog - Female Reproductive Health',
+			title: 'Blog - Women Genital and Fertility Health',
 			description: 'Read the latest articles on female reproductive and mental health.',
 			canonical: '/blog',
 		},
@@ -67,7 +67,7 @@ const routes = [
 		name: 'BlogPost',
 		component: () => import(/* webpackChunkName: "blog-post" */ '../views/BlogPost.vue'),
 		meta: {
-			title: 'Blog Post - Female Reproductive Health',
+			title: 'Blog Post - Women Genital and Fertility Health',
 			description: 'Read detailed posts about female reproductive and mental health.',
 			canonical: '/blog/:id',
 		},

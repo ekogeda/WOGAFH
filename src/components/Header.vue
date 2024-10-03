@@ -8,7 +8,7 @@
         <div class="flex items-center space-x-4">
           <img
             src="../assets/android-chrome-512x512.png"
-            alt="Reproductive Health Foundation Logo"
+            alt="Women Genital and Fertility Health Foundation Logo"
             class="h-10 w-auto sm:h-12 transition-transform duration-500 transform hover:scale-125 rounded-full"
           />
           <h1
