@@ -37,6 +37,13 @@
           </li>
           <li>
             <router-link
+              to="/services"
+              class="hover:text-accent transition-colors duration-300"
+              >Services</router-link
+            >
+          </li>
+          <li>
+            <router-link
               to="/about"
               class="hover:text-accent transition-colors duration-300"
               >About Us</router-link
