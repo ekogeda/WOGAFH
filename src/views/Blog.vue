@@ -1,27 +1,29 @@
 <template>
-  <div class="container mx-auto p-4">
-    <header class="text-center py-8">
-      <h1 class="text-4xl font-bold">Our Blog</h1>
-      <p class="mt-4 text-lg">
-        Stay updated with our latest articles on female reproductive and mental health.
-      </p>
-    </header>
+  <section class="py-16">
+    <div class="container px-4 mx-auto space-y-4">
+      <header class="text-center">
+        <h1 class="text-4xl font-bold">Our Blog</h1>
+        <p class="mt-4 text-lg">
+          Stay updated with our latest articles on female reproductive and mental health.
+        </p>
+      </header>
 
-    <section class="py-8">
-      <ul class="space-y-6">
-        <li v-for="post in blogPosts" :key="post.id" class="border-b pb-4">
-          <h2 class="text-2xl font-semibold">{{ post.title }}</h2>
-          <p class="mt-2 text-gray-600">{{ post.excerpt }}</p>
-          <router-link
-            :to="'/blog/' + post.id"
-            class="text-blue-600 hover:underline mt-4 inline-block"
-          >
-            Read more
-          </router-link>
-        </li>
-      </ul>
-    </section>
-  </div>
+      <section class="py-8 max-w-7xl mx-auto">
+        <ul class="space-y-6">
+          <li v-for="post in blogPosts" :key="post.id" class="border-b pb-4">
+            <h2 class="text-2xl font-semibold">{{ post.title }}</h2>
+            <p class="mt-2 text-gray-600">{{ post.excerpt }}</p>
+            <router-link
+              :to="'/blog/' + post.id"
+              class="text-blue-600 hover:underline mt-4 inline-block"
+            >
+              Read more
+            </router-link>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </section>
 </template>
 
 <script setup>
