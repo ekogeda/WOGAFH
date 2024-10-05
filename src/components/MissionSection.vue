@@ -1,7 +1,12 @@
 <template>
   <section class="px-3 py-10 md:py-16 bg-white">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Our Mission</h2>
+      <h2
+        class="text-3xl md:text-4xl text-center mb-8"
+        :class="[$route.name === 'Mission' ? 'font-bold' : 'font-heading']"
+      >
+        Our Mission
+      </h2>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <!-- Left Column -->
         <div class="flex justify-center">
