@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
 
 // Data for updates
 const updates = ref([
@@ -24,40 +24,74 @@ const updates = ref([
       "/assets/images/outings/photo12.jpg",
       "/assets/images/outings/photo13.jpg",
     ],
+    article: `
+      <h3 class="text-2xl mt-4 mb-2">Rightful Cleaning and Clothing of the Female Genitalia</h3>
+      <p class="mt-2 text-gray-700">
+        Maintaining proper hygiene and appropriate clothing choices is essential for the overall health of women, particularly when it comes to their genital and reproductive health.
+      </p>
+      <h4 class="text-xl mt-4">Why Proper Hygiene Matters</h4>
+      <p class="mt-2 text-gray-700">
+        Proper hygiene prevents infections, maintains the vagina’s natural balance, and reduces odors and irritation. Follow these simple steps:
+      </p>
+      <ul class="list-disc pl-5 mt-2 text-gray-700">
+        <li>Use mild soap or just clean water for external washing.</li>
+        <li>Always wipe front to back after using the restroom.</li>
+        <li>Dry the area thoroughly after washing or urinating.</li>
+      </ul>
+      <h4 class="text-xl mt-4">Appropriate Clothing Practices</h4>
+      <p class="mt-2 text-gray-700">
+        Choose breathable fabrics like cotton, avoid tight-fitting clothing for long periods, and change out of workout clothes promptly after exercising.
+      </p>
+      <h4 class="text-xl mt-4">Additional Tips for Genital Health</h4>
+      <ul class="list-disc pl-5 mt-2 text-gray-700">
+        <li>Hydrate and eat a balanced diet to support healthy bacteria.</li>
+        <li>Visit a healthcare provider regularly for check-ups.</li>
+        <li>Avoid using scented products or douches, as they can disrupt natural pH levels.</li>
+      </ul>
+      <p class="mt-4 text-gray-700">
+        By following these practices, women can maintain optimal health and reduce the risk of infections or discomfort.
+      </p>
+    `,
   },
 ]);
 
 // State to manage modal for image viewing
-const selectedImageIndex = ref(null);
-const activeImages = ref(updates.value[0].images); // Active images for modal navigation
+const selectedImage = ref(null);
+const selectedIndex = ref(0);
 
-// Function to open modal at the selected image index
-function viewImage(index) {
-  selectedImageIndex.value = index;
+// State to manage the expanded gallery
+const expanded = ref(false);
+
+// Computed property to get the current update's images
+const currentImages = computed(
+  () => updates.value[0]?.images || [] // Adjust to dynamically get images for a selected update
+);
+
+// Function to view an image in the modal
+function viewImage(image, index) {
+  selectedImage.value = image;
+  selectedIndex.value = index;
 }
 
-// Function to navigate to the next image
-function nextImage() {
-  if (selectedImageIndex.value !== null) {
-    selectedImageIndex.value = (selectedImageIndex.value + 1) % activeImages.value.length;
-  }
-}
-
-// Function to navigate to the previous image
+// Navigate to the previous image
 function prevImage() {
-  if (selectedImageIndex.value !== null) {
-    selectedImageIndex.value =
-      (selectedImageIndex.value - 1 + activeImages.value.length) %
-      activeImages.value.length;
+  if (selectedIndex.value > 0) {
+    selectedIndex.value--;
+    selectedImage.value = currentImages.value[selectedIndex.value];
   }
 }
 
-// State for "View More" functionality
-const maxImagesToShow = ref(6);
+// Navigate to the next image
+function nextImage() {
+  if (selectedIndex.value < currentImages.value.length - 1) {
+    selectedIndex.value++;
+    selectedImage.value = currentImages.value[selectedIndex.value];
+  }
+}
 
-// Function to load all images
-function loadMoreImages() {
-  maxImagesToShow.value = activeImages.value.length;
+// Toggle gallery expansion
+function toggleGallery() {
+  expanded.value = !expanded.value;
 }
 </script>
 
@@ -84,49 +118,59 @@ function loadMoreImages() {
           <!-- Image Gallery -->
           <div class="mt-4">
             <h4 class="text-gray-800 font-medium mb-2">Gallery</h4>
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <div
+              class="grid grid-cols-2 sm:grid-cols-3 gap-3"
+              :class="{ 'max-h-56 overflow-hidden': !expanded }"
+            >
               <img
-                v-for="(image, index) in update.images.slice(0, maxImagesToShow)"
+                v-for="(image, index) in update.images"
                 :key="index"
                 :src="image"
                 :alt="'Photo ' + (index + 1) + ' of ' + update.title"
                 class="w-full h-40 object-cover rounded-lg cursor-pointer hover:opacity-80"
-                @click="viewImage(index)"
+                @click="viewImage(image, index)"
               />
             </div>
-            <!-- Load More Button -->
-            <button
-              v-if="maxImagesToShow < update.images.length"
-              class="mt-4 text-blue-600 underline hover:text-blue-800"
-              @click="loadMoreImages"
-            >
-              View More
+            <button class="mt-3 text-blue-500 underline" @click="toggleGallery">
+              {{ expanded ? "Show Less" : "View More" }}
             </button>
           </div>
+
+          <!-- Article Section -->
+          <div
+            class="mt-6 p-4 bg-white border-l-4 border-pink-500 rounded-md shadow-sm"
+            v-html="update.article"
+          ></div>
         </div>
       </div>
 
       <!-- Modal for Viewing Images -->
       <div
-        v-if="selectedImageIndex !== null"
+        v-if="selectedImage"
         class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
       >
-        <!-- Modal Navigation -->
-        <button class="absolute left-4 text-white text-3xl" @click="prevImage">
+        <button
+          class="absolute left-5 text-white text-2xl"
+          @click="prevImage"
+          :disabled="selectedIndex === 0"
+        >
           &larr;
         </button>
         <img
-          :src="activeImages[selectedImageIndex]"
+          :src="selectedImage"
           alt="Selected"
           class="max-w-full max-h-full rounded-lg"
         />
-        <button class="absolute right-4 text-white text-3xl" @click="nextImage">
+        <button
+          class="absolute right-5 text-white text-2xl"
+          @click="nextImage"
+          :disabled="selectedIndex === currentImages.length - 1"
+        >
           &rarr;
         </button>
-        <!-- Close Modal -->
         <button
-          class="absolute top-4 right-4 text-white text-2xl"
-          @click="selectedImageIndex = null"
+          class="absolute top-5 right-5 text-white text-2xl"
+          @click="selectedImage = null"
         >
           &times;
         </button>
@@ -136,14 +180,9 @@ function loadMoreImages() {
 </template>
 
 <style scoped>
-/* Optional styles for modal navigation buttons */
-button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-button:focus {
-  outline: none;
+/* Optional styles for the modal and navigation buttons */
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 </style>
