@@ -1,3 +1,7 @@
+<script setup>
+// import QRCode from "../components/QRCode.vue";
+</script>
+
 <template>
   <section class="px-3 py-10 md:py-16">
     <div class="container mx-auto px-4 max-w-2xl space-y-4">
@@ -35,10 +39,16 @@
           <p>Saturday: 10 AM - 2 PM</p>
         </div>
       </div>
+      <!-- QR Code Section -->
+      <div class="mt-8 text-center">
+        <!-- <h2 class="text-2xl font-semibold mb-4">Scan Our QR Code</h2> -->
+        <!-- <QRCode /> -->
+        <!-- <p class="mt-2 text-sm text-gray-600">
+          Scan this code to access our online Google Form.
+        </p> -->
+      </div>
     </div>
   </section>
 </template>
-
-<script setup></script>
 
 <style scoped></style>
