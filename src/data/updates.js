@@ -92,20 +92,110 @@ export const updates = [
     </p>
   `,
 	},
-
 	{
 		id: 3,
+		title: "Teen Girls Talk on Menstrual Hygiene and How to Prevent PCOS",
+		description:
+			"An adolescent health education session designed to help teen girls understand menstrual hygiene, recognize early warning signs of menstrual disorders, and learn healthy lifestyle habits that may reduce PCOS-related risks.",
+		date: "December 2nd, 2025",
+		gallery: ["/assets/images/outings3/photo1.PNG", "/assets/images/outings3/photo2.PNG"],
+		article: `
+    <h3 class="text-2xl mt-4 mb-2">Teen Girls Talk on Menstrual Hygiene and How to Prevent PCOS</h3>
+    <p class="mt-2 text-gray-700">
+      Woman Genital and Fertility Health Foundation continues its commitment to adolescent reproductive health education through a focused teen girls' talk on menstrual hygiene and PCOS awareness. The session is designed to provide young girls with clear, age-appropriate, and practical information about caring for their bodies, understanding menstruation, and recognizing when menstrual changes may require medical attention.
+    </p>
+
+    <h4 class="text-xl mt-4">Why This Conversation Matters</h4>
+    <p class="mt-2 text-gray-700">
+      Menstruation is a normal part of growth and reproductive development, yet many teenage girls still experience fear, shame, misinformation, and silence around their periods. When girls are properly informed, they are better able to manage menstruation with confidence, maintain hygiene, speak up about unusual symptoms, and seek support early.
+    </p>
+    <p class="mt-2 text-gray-700">
+      This programme also introduces girls to polycystic ovary syndrome, commonly called PCOS. While PCOS cannot always be completely prevented because genetic and hormonal factors may play a role, healthy habits, early awareness, and timely medical support can help reduce risks, manage symptoms, and protect long-term reproductive and metabolic health.
+    </p>
+
+    <h4 class="text-xl mt-4">Understanding Menstrual Hygiene</h4>
+    <p class="mt-2 text-gray-700">
+      Good menstrual hygiene helps girls stay comfortable, confident, and protected during their period. It also supports school attendance, self-esteem, and general wellbeing.
+    </p>
+    <ul class="list-disc pl-5 mt-2 text-gray-700">
+      <li>Use clean and safe menstrual products such as sanitary pads, reusable pads, menstrual cups, or clean absorbent materials where appropriate.</li>
+      <li>Change menstrual products regularly to prevent discomfort, odour, irritation, and possible infection.</li>
+      <li>Wash the external genital area with clean water and avoid harsh soaps, perfumes, or unsafe substances.</li>
+      <li>Dispose of used menstrual products safely and respectfully.</li>
+      <li>Track menstrual cycles to understand what is normal and identify unusual changes early.</li>
+    </ul>
+
+    <h4 class="text-xl mt-4">PCOS Awareness for Teen Girls</h4>
+    <p class="mt-2 text-gray-700">
+      PCOS is a hormonal condition that can affect menstrual cycles, skin, hair growth, weight, and future fertility. It may begin during adolescence, although irregular periods can also be common in the early years after a girl's first period. The aim of this session is not to create fear, but to help girls and parents know when to ask questions and seek professional care.
+    </p>
+    <ul class="list-disc pl-5 mt-2 text-gray-700">
+      <li>Irregular, very infrequent, very heavy, or absent periods.</li>
+      <li>Persistent acne or unusually oily skin.</li>
+      <li>Excess facial or body hair growth.</li>
+      <li>Unexplained weight changes, especially around the abdomen.</li>
+      <li>Family history of PCOS, type 2 diabetes, or related hormonal concerns.</li>
+    </ul>
+
+    <h4 class="text-xl mt-4">Healthy Habits That May Help Reduce PCOS-Related Risks</h4>
+    <p class="mt-2 text-gray-700">
+      There is no guaranteed way to prevent PCOS in every girl. However, healthy daily habits may reduce the risk of developing severe symptoms, support hormone balance, and improve overall wellbeing.
+    </p>
+    <ul class="list-disc pl-5 mt-2 text-gray-700">
+      <li>Eat balanced meals with vegetables, fruits, whole grains, protein, and enough water.</li>
+      <li>Reduce excessive intake of sugary drinks, highly processed foods, and frequent junk food.</li>
+      <li>Stay physically active through sports, walking, dancing, exercise, or regular play.</li>
+      <li>Sleep well and maintain a healthy daily routine.</li>
+      <li>Speak with a parent, guardian, school nurse, or healthcare professional when periods become unusual or distressing.</li>
+    </ul>
+
+    <h4 class="text-xl mt-4">Topics Covered During the Talk</h4>
+    <ul class="list-disc pl-5 mt-2 text-gray-700">
+      <li>Puberty, menstruation, and body confidence.</li>
+      <li>Safe menstrual hygiene practices at home and in school.</li>
+      <li>Menstrual myths and harmful practices to avoid.</li>
+      <li>How to track periods and identify warning signs.</li>
+      <li>Basic PCOS awareness and when to seek medical help.</li>
+      <li>The role of nutrition, exercise, sleep, and emotional wellbeing in adolescent health.</li>
+    </ul>
+
+    <h4 class="text-xl mt-4">Benefits of the Session</h4>
+    <p class="mt-2 text-gray-700">
+      The teen girls' talk is expected to build confidence, reduce stigma, encourage healthy habits, and help girls become more informed about their reproductive health. It also supports parents, schools, and communities by promoting early education rather than waiting until health concerns become severe.
+    </p>
+    <ul class="list-disc pl-5 mt-2 text-gray-700">
+      <li>Improved menstrual health knowledge among teen girls.</li>
+      <li>Greater confidence in managing menstruation safely and hygienically.</li>
+      <li>Better understanding of PCOS symptoms and early warning signs.</li>
+      <li>Encouragement of healthy lifestyle habits from adolescence.</li>
+      <li>Reduced shame and silence around girls' reproductive health.</li>
+    </ul>
+
+    <h4 class="text-xl mt-4">Event Information</h4>
+    <ul class="list-disc pl-5 mt-2 text-gray-700">
+      <li><strong>Topic:</strong> Teen Girls Talk on Menstrual Hygiene and How to Prevent PCOS</li>
+      <li><strong>Audience:</strong> Teenage girls, parents, guardians, educators, and adolescent health advocates</li>
+      <li><strong>Date:</strong> To be announced</li>
+      <li><strong>Venue:</strong> To be announced</li>
+    </ul>
+    <p class="mt-4 text-gray-700">
+      Through this programme, WOGAFH aims to give teenage girls the right information early, helping them grow with dignity, confidence, and a stronger understanding of their reproductive health.
+    </p>
+  `,
+	},
+	{
+		id: 4,
 		title: "Exploring the Connection Between Reproductive & Mental Health",
 		description:
 			"A virtual health conversation exploring the important connection between reproductive and mental health, featuring expert discussants in obstetrics, gynecology, and psychiatry.",
 		date: "April 26, 2026",
 		gallery: [
-      "/assets/images/events/reproductive-mental-health-flyer.jpeg",
-      "/assets/images/events/attentive-participants.jpeg",
-      "/assets/images/events/attentive-participants-1.jpeg",
-      "/assets/images/events/attentive-participants-2.jpeg",
-      "/assets/images/events/attentive-participants-3.jpeg",
-    ],
+			"/assets/images/events/reproductive-mental-health-flyer.jpeg",
+			"/assets/images/events/attentive-participants.jpeg",
+			"/assets/images/events/attentive-participants-1.jpeg",
+			"/assets/images/events/attentive-participants-2.jpeg",
+			"/assets/images/events/attentive-participants-3.jpeg",
+		],
 		article: `
       <h3 class="text-2xl mt-4 mb-2">Exploring the Connection Between Reproductive & Mental Health</h3>
       <p class="mt-2 text-gray-700">
@@ -163,6 +253,115 @@ export const updates = [
         This programme reflects WOGAFH's commitment to education, advocacy, and practical health conversations that empower women to understand their bodies, protect their wellbeing, and seek timely professional support.
       </p>
     `,
+	},
+	{
+		id: 5,
+		title: "Switch to Fertility Mode: Pre-Treatment Seminar",
+		description:
+			"A fertility pre-treatment seminar organized by Women Genital and Fertility Health Foundation in partnership with Beleke Smith Memorial Community Clinic, featuring free counselling, free pelvic ultrasound, and yoga and nutrition sensitisation.",
+		date: "February 08, 2025",
+		gallery: ["/assets/images/events/switch-to-fertility-mode.jpeg"],
+		article: `
+    <h3 class="text-2xl mt-4 mb-2">Switch to Fertility Mode: Pre-Treatment Seminar</h3>
+    <p class="mt-2 text-gray-700">
+      Women Genital and Fertility Health Foundation, in partnership with Beleke Smith Memorial Community Clinic, presented a pre-treatment fertility seminar titled <strong>Switch to Fertility Mode</strong>. The programme was designed to support women, couples, and families who are preparing for fertility care by providing practical information, professional guidance, and access to basic screening support.
+    </p>
+    <p class="mt-2 text-gray-700">
+      Fertility preparation goes beyond treatment appointments. It also involves education, emotional readiness, lifestyle awareness, medical evaluation, and supportive counselling. This seminar created a safe and informative space for participants to learn, ask questions, and better understand important steps that may support their reproductive health journey.
+    </p>
+
+    <h4 class="text-xl mt-4">Why Fertility Pre-Treatment Education Matters</h4>
+    <p class="mt-2 text-gray-700">
+      Many women begin fertility treatment without adequate information about their bodies, available care options, or the lifestyle factors that may affect reproductive wellbeing. Pre-treatment education helps participants understand the importance of early assessment, proper counselling, healthy nutrition, stress management, and timely medical support.
+    </p>
+    <p class="mt-2 text-gray-700">
+      The purpose of the seminar was not to replace individual medical consultation, but to strengthen awareness and encourage participants to take informed steps before, during, and after fertility-related care.
+    </p>
+
+    <h4 class="text-xl mt-4">Key Benefits Provided</h4>
+    <ul class="list-disc pl-5 mt-2 text-gray-700">
+      <li>Free counselling for participants seeking guidance on fertility-related concerns.</li>
+      <li>Free pelvic ultrasound, either transvaginal or abdominal, based on professional assessment and suitability.</li>
+      <li>Yoga and nutrition sensitisation to promote healthier lifestyle choices and reproductive wellbeing.</li>
+      <li>Opportunity for participants to ask questions in a supportive and respectful environment.</li>
+    </ul>
+
+    <h4 class="text-xl mt-4">Topics Covered During the Seminar</h4>
+    <ul class="list-disc pl-5 mt-2 text-gray-700">
+      <li>Basic understanding of fertility and reproductive health.</li>
+      <li>Importance of pelvic assessment and ultrasound screening.</li>
+      <li>When to seek professional fertility evaluation.</li>
+      <li>Nutrition habits that may support general reproductive health.</li>
+      <li>Stress reduction, body awareness, and the role of gentle physical activity.</li>
+      <li>Emotional support and counselling during the fertility journey.</li>
+    </ul>
+
+    <h4 class="text-xl mt-4">Programme Partnership</h4>
+    <p class="mt-2 text-gray-700">
+      The seminar was presented by <strong>Women Genital and Fertility Health Foundation</strong> in partnership with <strong>Beleke Smith Memorial Community Clinic</strong>. This collaboration reflects WOGAFH's continued commitment to accessible reproductive health education, community-based support, and practical interventions that help women make informed health decisions.
+    </p>
+
+    <h4 class="text-xl mt-4">Event Information</h4>
+    <ul class="list-disc pl-5 mt-2 text-gray-700">
+      <li><strong>Event:</strong> Switch to Fertility Mode</li>
+      <li><strong>Programme Type:</strong> Pre-treatment fertility seminar</li>
+      <li><strong>Date:</strong> February 08, 2025</li>
+      <li><strong>Time:</strong> 10:00 AM</li>
+      <li><strong>Location:</strong> Main Hall, Beleke Smith Memorial Centre, Rabiat Thompson Street, Shitta, Surulere, Lagos</li>
+      <li><strong>Partner:</strong> Beleke Smith Memorial Community Clinic</li>
+    </ul>
+
+    <h4 class="text-xl mt-4">Continuing WOGAFH's Mission</h4>
+    <p class="mt-2 text-gray-700">
+      Through the Switch to Fertility Mode seminar, WOGAFH reinforced the importance of education, early screening, counselling, and lifestyle awareness in women's fertility care. The event supported participants with information and services that can help them approach fertility decisions with greater clarity, confidence, and preparedness.
+    </p>
+  `,
+	},
+	{
+		id: 6,
+		title: "Medical Outreach in Commemoration of International Women's Day",
+		description:
+			"A community medical outreach organized in commemoration of International Women's Day, focused on women's health education, awareness, and access to basic reproductive health support services.",
+		date: "March 08, 2025",
+		gallery: ["/assets/images/events/international-womens-day-medical-outreach.jpeg"],
+		article: `
+    <h3 class="text-2xl mt-4 mb-2">Medical Outreach in Commemoration of International Women's Day</h3>
+
+    <p class="mt-2 text-gray-700">
+      Women Genital and Fertility Health Foundation, in conjunction with Beleke Smith Memorial Community Clinic, organized a medical outreach programme in commemoration of International Women's Day. The outreach was designed to promote awareness on women's health, encourage early medical consultation, and provide access to basic health support services within the community.
+    </p>
+
+    <h4 class="text-xl mt-4">Purpose of the Outreach</h4>
+    <p class="mt-2 text-gray-700">
+      The programme focused on empowering women with accurate health information while encouraging proactive health-seeking behaviour. It also created a platform for open discussion around reproductive health concerns, preventive care, and general wellbeing.
+    </p>
+
+    <h4 class="text-xl mt-4">Key Focus Areas</h4>
+    <ul class="list-disc pl-5 mt-2 text-gray-700">
+      <li>Women's reproductive health awareness and education.</li>
+      <li>Importance of early medical consultation and routine check-ups.</li>
+      <li>Basic preventive health education for women of all ages.</li>
+      <li>Community engagement on health-seeking behaviour.</li>
+      <li>Promoting access to accurate and reliable health information.</li>
+    </ul>
+
+    <h4 class="text-xl mt-4">Programme Highlights</h4>
+    <p class="mt-2 text-gray-700">
+      The outreach featured interactive sessions where participants engaged with health professionals on various women's health topics. Attendees were also encouraged to ask questions and seek clarification on common reproductive health concerns.
+    </p>
+
+    <h4 class="text-xl mt-4">Event Details</h4>
+    <ul class="list-disc pl-5 mt-2 text-gray-700">
+      <li><strong>Event:</strong> Medical Outreach in Commemoration of International Women's Day</li>
+      <li><strong>Date:</strong> 8th March 2025</li>
+      <li><strong>Venue:</strong> Main Hall, Beleke Smith Memorial Centre, Rabiat Thompson Street, Shitta, Surulere, Lagos</li>
+      <li><strong>Organizers:</strong> Women Genital and Fertility Health Foundation in partnership with Beleke Smith Memorial Community Clinic</li>
+    </ul>
+
+    <p class="mt-4 text-gray-700">
+      This outreach reinforced WOGAFH's commitment to improving women's health outcomes through education, community engagement, and accessible healthcare awareness programmes.
+    </p>
+  `,
 	},
 	// Add more updates here...
 ];

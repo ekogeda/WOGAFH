@@ -11,15 +11,25 @@ const selectedIndex = ref(0);
 const selectedUpdate = ref(null); // Track which update is open
 const expanded = ref(false);
 
+const parseDate = (dateStr) => {
+	return new Date(
+		dateStr
+			// Remove weekday if present (e.g., "Monday, May 1, 2023")
+			.replace(/^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),\s*/i, "")
+			// Remove ordinal suffixes: 1st, 2nd, 3rd, 4th, etc.
+			.replace(/(\d+)(st|nd|rd|th)/gi, "$1"),
+	);
+};
+
 const sortedUpdates = computed(() => {
-	return [...updates.value].sort((a, b) => new Date(b.date) - new Date(a.date));
+	return [...updates.value].sort((a, b) => parseDate(b.date) - parseDate(a.date));
 });
 
 // Current gallery based on the selected update
 const currentGallery = computed(() => selectedUpdate.value?.gallery || []);
 
 // Featured event
-const featuredEvent = computed(() => updates.value.find((update) => update.id === 3));
+const featuredEvent = computed(() => updates.value.find((update) => update.id === 4));
 
 // Check if item is a video
 function isVideo(item) {

@@ -58,8 +58,9 @@ const coverImage = computed(() => props.event?.gallery?.[0] || "/assets/images/p
 					</div>
 
 					<a
-						:href="detailsHref"
-						class="mt-8 inline-flex items-center justify-center rounded-full bg-purple-700 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+						:href="null"
+            disabled
+						class="disabled:opacity-50 pointer-events-none opacity-50 cursor-not-allowed mt-8 inline-flex items-center justify-center rounded-full bg-purple-700 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
 					>
 						View Details
 					</a>
