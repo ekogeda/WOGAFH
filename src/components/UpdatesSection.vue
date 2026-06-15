@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from "vue";
 import { updates as updatesData } from "@/data/updates";
+import FeaturedHealthConversation from "./events/FeaturedHealthConversation.vue";
 
 const updates = ref(updatesData);
 
@@ -16,6 +17,9 @@ const sortedUpdates = computed(() => {
 
 // Current gallery based on the selected update
 const currentGallery = computed(() => selectedUpdate.value?.gallery || []);
+
+// Featured event
+const featuredEvent = computed(() => updates.value.find((update) => update.id === 3));
 
 // Check if item is a video
 function isVideo(item) {
@@ -104,6 +108,8 @@ onUnmounted(() => {
 			<p class="text-gray-700 text-center">Stay informed about our latest outings and sensitization programs.</p>
 
 			<div class="mt-10 space-y-6">
+				<FeaturedHealthConversation v-if="featuredEvent" :event="featuredEvent" details-href="#updates" />
+
 				<div
 					v-for="update in sortedUpdates"
 					:key="update.id"

@@ -92,5 +92,77 @@ export const updates = [
     </p>
   `,
 	},
+
+	{
+		id: 3,
+		title: "Exploring the Connection Between Reproductive & Mental Health",
+		description:
+			"A virtual health conversation exploring the important connection between reproductive and mental health, featuring expert discussants in obstetrics, gynecology, and psychiatry.",
+		date: "April 26, 2026",
+		gallery: [
+      "/assets/images/events/reproductive-mental-health-flyer.jpeg",
+      "/assets/images/events/attentive-participants.jpeg",
+      "/assets/images/events/attentive-participants-1.jpeg",
+      "/assets/images/events/attentive-participants-2.jpeg",
+      "/assets/images/events/attentive-participants-3.jpeg",
+    ],
+		article: `
+      <h3 class="text-2xl mt-4 mb-2">Exploring the Connection Between Reproductive & Mental Health</h3>
+      <p class="mt-2 text-gray-700">
+        Woman Genital and Fertility Health Foundation is hosting a virtual health conversation focused on the important connection between reproductive health and mental health. The session brings together expert voices in obstetrics, gynecology, medicine, and psychiatry to strengthen public awareness, encourage informed health decisions, and promote holistic wellbeing for women and families.
+      </p>
+
+      <h4 class="text-xl mt-4">Why Reproductive and Mental Health Are Connected</h4>
+      <p class="mt-2 text-gray-700">
+        Reproductive health is not limited to physical symptoms or clinical treatment. It is closely linked with emotional wellbeing, stress levels, self-esteem, relationships, fertility experiences, pregnancy outcomes, childbirth, hormonal changes, and long-term quality of life. When reproductive concerns are ignored, misunderstood, or poorly managed, they may contribute to anxiety, depression, isolation, fear, and reduced confidence in seeking care.
+      </p>
+      <p class="mt-2 text-gray-700">
+        In the same way, mental health challenges can affect reproductive choices, healthcare-seeking behaviour, treatment adherence, family life, and personal wellbeing. This conversation is designed to help participants understand both sides of the connection and appreciate why women's health should be approached in a complete and compassionate way.
+      </p>
+
+      <h4 class="text-xl mt-4">Key Areas of Discussion</h4>
+      <ul class="list-disc pl-5 mt-2 text-gray-700">
+        <li>The relationship between reproductive health experiences and emotional wellbeing.</li>
+        <li>How fertility concerns, pregnancy, childbirth, and menopause may affect mental health.</li>
+        <li>The importance of early support, proper medical guidance, and mental health awareness.</li>
+        <li>Reducing stigma around women's reproductive and psychological health concerns.</li>
+        <li>Encouraging open conversations between patients, families, and healthcare professionals.</li>
+      </ul>
+
+      <h4 class="text-xl mt-4">Benefits of Awareness and Education</h4>
+      <p class="mt-2 text-gray-700">
+        Awareness helps women and families recognise warning signs early, ask better questions, and seek appropriate care without shame or delay. It also supports healthier communities by correcting misinformation, promoting preventive care, and encouraging people to treat mental health as an essential part of reproductive health.
+      </p>
+      <ul class="list-disc pl-5 mt-2 text-gray-700">
+        <li>Improved confidence in discussing reproductive and emotional health concerns.</li>
+        <li>Better understanding of when to seek professional medical or psychological support.</li>
+        <li>Stronger family and community support for women experiencing health challenges.</li>
+        <li>Reduced stigma around fertility, pregnancy-related distress, and mental health conditions.</li>
+      </ul>
+
+      <h4 class="text-xl mt-4">Discussants</h4>
+      <p class="mt-2 text-gray-700">
+        <strong>Dr. Gloria A. Bachmann, MD, MMS</strong><br />
+        Professor of Obstetrics &amp; Gynecology and Medicine<br />
+        Chair of Health Committee
+      </p>
+      <p class="mt-2 text-gray-700">
+        <strong>Dr. Bukola Asorona Quadri</strong><br />
+        Consultant Psychiatrist<br />
+        Lagos University Teaching Hospital, Idi Araba, Lagos
+      </p>
+
+      <h4 class="text-xl mt-4">Event Information</h4>
+      <ul class="list-disc pl-5 mt-2 text-gray-700">
+        <li><strong>Event:</strong> Exploring the Connection Between Reproductive &amp; Mental Health</li>
+        <li><strong>Date:</strong> Friday, April 26th, 2026</li>
+        <li><strong>Time:</strong> 5:00 PM</li>
+        <li><strong>Meeting Type:</strong> Virtual Meeting on Zoom</li>
+      </ul>
+      <p class="mt-4 text-gray-700">
+        This programme reflects WOGAFH's commitment to education, advocacy, and practical health conversations that empower women to understand their bodies, protect their wellbeing, and seek timely professional support.
+      </p>
+    `,
+	},
 	// Add more updates here...
 ];
